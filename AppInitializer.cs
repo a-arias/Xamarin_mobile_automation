@@ -1,13 +1,5 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using System.Configuration;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Xamarin.UITest;
-using Xamarin.UITest.Android;
-using Xamarin.UITest.iOS;
-using Xamarin.UITest.Queries;
-
 using Automated;
 
 namespace NUnit.Tests{
@@ -31,7 +23,7 @@ namespace NUnit.Tests{
 				BaseScreen.App = ConfigureApp
 					.Android
 					.ApkFile("/Users/aarias/Desktop/task-todo.apk")
-					.DeviceSerial("emulator-5554")
+					.DeviceSerial("192.168.58.101:5555")
 					.StartApp();
 			}
 		}
