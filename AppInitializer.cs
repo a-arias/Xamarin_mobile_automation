@@ -10,7 +10,6 @@ namespace NUnit.Tests{
 		[SetUp]
 		public void SetUp(){
 			string device = "Android";
-			//			string device = "iOS";
 
 			if (device == "iOS"){
 				BaseScreen.App = ConfigureApp
